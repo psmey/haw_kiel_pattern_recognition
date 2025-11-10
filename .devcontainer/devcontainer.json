@@ -1,0 +1,25 @@
+{
+    "name": "HAW Kiel Pattern Recognition",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "ms-azuretools.vscode-docker",
+                "docker.docker",
+                "EditorConfig.EditorConfig",
+                "exiasr.hadolint",
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                "streetsidesoftware.code-spell-checker",
+                "toasty-technologies.octave",
+                "paulosilva.vsc-octave-debugger"
+            ]
+        }
+    },
+    "mounts": [
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind,consistency=cached"
+    ]
+}

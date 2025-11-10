@@ -1,0 +1,2 @@
+% Make all figures invisible by default (headless safe)
+set(0, 'DefaultFigureVisible', 'off');
