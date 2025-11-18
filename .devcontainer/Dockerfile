@@ -11,6 +11,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     git \
     wget \
+    ca-certificates \
     octave octave-doc octave-dev \
     # Octave dependecies
     fonts-freefont-otf ghostscript \
