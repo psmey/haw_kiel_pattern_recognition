@@ -12,4 +12,12 @@
 % Hint: To build the filename for a specific digit you may use string
 % concatenation (cf. Octave documentation) and the command int2str.
 
-showData(1)
+% showData(2)
+
+% b.
+% Write a script show_mean_and_variance.m which plots the mean and variance of
+% each pixel as two new images (see lecture, Chapter 1).
+
+for digit = 0:9
+    showMeanAndVariance(digit);
+end

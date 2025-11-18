@@ -8,8 +8,9 @@ function showData(digit)
         I = D(i,:);
         I = reshape(I, [28,28]); % converts I to size to 28 x 28
         figure(1);
+        I = I'; % tranpose matrix (switching rows & columns)
         imagesc(I);
-        print([image_dir "/digit" int2str(digit) ".png"], "-dpng");
+        print([image_dir "/data/digit" int2str(digit) ".png"], "-dpng");
         pause(0.1);
     end
 end
