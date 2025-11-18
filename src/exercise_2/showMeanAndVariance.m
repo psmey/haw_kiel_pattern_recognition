@@ -30,7 +30,7 @@ function showMeanAndVariance(digit)
         difference_sum_matrix = difference_sum_matrix + difference_matrix.^2;
     end
 
-    variance_matrix = difference_sum_matrix / size(D,1)
+    variance_matrix = difference_sum_matrix / size(D,1);
 
     imagesc(variance_matrix);
     print([image_dir "/variance/digit" int2str(digit) ".png"], "-dpng");

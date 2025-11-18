@@ -21,3 +21,11 @@
 for digit = 0:9
     showMeanAndVariance(digit);
 end
+
+% c.
+% Write a script show_pixel_distr.m which plots the gray value distribution of
+% pixel number 297 (using the vector representation of the image for indexing)
+% for all given images of digit 3. The pixel is located at the white dot shown
+% in Figure 2.
+
+showPixelDistr(3, 297)
