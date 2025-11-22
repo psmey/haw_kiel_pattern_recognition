@@ -1,4 +1,4 @@
-function showMeanAndVariance(digit)
+function [mean_matrix, variance_matrix] = showMeanAndVariance(digit)
     assets_dir = "./assets";
     image_dir = "./figures";
 
