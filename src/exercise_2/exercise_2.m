@@ -18,9 +18,9 @@
 % Write a script show_mean_and_variance.m which plots the mean and variance of
 % each pixel as two new images (see lecture, Chapter 1).
 
-for digit = 0:9
-    showMeanAndVariance(digit);
-end
+% for digit = 0:9
+%     showMeanAndVariance(digit);
+% end
 
 % c.
 % Write a script show_pixel_distr.m which plots the gray value distribution of
@@ -38,16 +38,33 @@ showPixelDistr(3, mean_matrix, column, row);
 % digit at 10 different interesting pixel positions. The current pixel must be
 % adequately illustrated.
 
-% based on mean
-showPixelDistr(3, mean_matrix, 12, 15);
-showPixelDistr(3, mean_matrix, 1, 1);
-showPixelDistr(3, mean_matrix, 8, 7);
-showPixelDistr(3, mean_matrix, 23, 19);
-showPixelDistr(3, mean_matrix, 13, 15);
+% % based on mean
+% showPixelDistr(3, mean_matrix, 12, 15);
+% showPixelDistr(3, mean_matrix, 1, 1);
+% showPixelDistr(3, mean_matrix, 8, 7);
+% showPixelDistr(3, mean_matrix, 23, 19);
+% showPixelDistr(3, mean_matrix, 13, 15);
+%
+% % based on variance
+% showPixelDistr(3, variance_matrix, 23, 9);
+% showPixelDistr(3, variance_matrix, 1, 1);
+% showPixelDistr(3, variance_matrix, 8, 7);
+% showPixelDistr(3, variance_matrix, 23, 19);
+% showPixelDistr(3, variance_matrix, 13, 15);
 
-% based on variance
-showPixelDistr(3, variance_matrix, 23, 9);
-showPixelDistr(3, variance_matrix, 1, 1);
-showPixelDistr(3, variance_matrix, 8, 7);
-showPixelDistr(3, variance_matrix, 23, 19);
-showPixelDistr(3, variance_matrix, 13, 15);
+# e
+# Generate covariance images, showing the correlation (function corr) between a
+# given base pixel and all other pixels in the image. To this end write a
+# function show_correlation() which receives three parameters:
+# - digit to be analyzed
+# - x coordinate of base pixel
+# - y coordinate of base pixel
+#
+# As in exercise d. the function must also illustrate the considered pixel in an extra figure.
+#
+# Example:
+# Calling the function show_correlation (3, 23, 9) should generate an image
+# showing the analyzed pixel (hint: the origin is at the top left, x runs from
+# left to right and y from top to bottom)
+
+showCorrelation(3, 23, 9)
