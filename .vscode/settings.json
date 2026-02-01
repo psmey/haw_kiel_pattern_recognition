@@ -15,6 +15,12 @@
     "markdown.extension.preview.autoShowPreviewToSide": true,
     "markdown.extension.toc.levels": "2..6",
     "cSpell.words": [
-        "noninteractive"
+        "dpng",
+        "noninteractive",
+        "repmat",
+        "setosa",
+        "strcmp",
+        "virginica",
+        "whos"
     ],
 }
