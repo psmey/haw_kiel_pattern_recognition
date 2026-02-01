@@ -21,15 +21,15 @@ RUN apt-get update \
 
 # Install Hadolint
 # https://github.com/hadolint/hadolint
-ENV HADOLINT_VERSION=v2.12.0
-RUN wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VERSION}/hadolint-Linux-x86_64 \
-    && wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VERSION}/hadolint-Linux-x86_64.sha256 \
+ENV HADOLINT_VERSION=v2.14.0
+RUN wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VERSION}/hadolint-linux-x86_64 \
+    && wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VERSION}/hadolint-linux-x86_64.sha256 \
     # Verify file
-    && sha256sum -c /hadolint-Linux-x86_64.sha256 \
-    && rm /hadolint-Linux-x86_64.sha256 \
+    && sha256sum -c /hadolint-linux-x86_64.sha256 \
+    && rm /hadolint-linux-x86_64.sha256 \
     # Make executable
-    && chmod +x /hadolint-Linux-x86_64 \
+    && chmod +x /hadolint-linux-x86_64 \
     # Add to PATH
-    && mv /hadolint-Linux-x86_64 /usr/local/bin/hadolint \
+    && mv /hadolint-linux-x86_64 /usr/local/bin/hadolint \
     # Verify installation
     && hadolint --version
